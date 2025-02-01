@@ -1,0 +1,69 @@
+{
+    "filmes": [
+    {
+      "nome": "Emilia Pérez",
+      "imagem": "../oscar2025/emilia-perez.jpg"
+    },
+    {
+      "nome": "O Brutalista",
+      "imagem": "../oscar2025/o-brutalista.jpg"
+    },
+    {
+      "nome": "Wicked",
+      "imagem": "../oscar2025/wicked.jpg"
+    },
+    {
+      "nome": "Anora",
+      "imagem": "../oscar2025/anora.jpg"
+    },
+    {
+      "nome": "Conclave",
+      "imagem": "../oscar2025/conclave.jpg"
+    },
+    {
+      "nome": "Duna: Parte 2",
+      "imagem": "../oscar2025/duna-parte-2.jpg"
+    },
+    {
+      "nome": "Nickel Boys",
+      "imagem": "../oscar2025/nickel-boys.jpg"
+    },
+    {
+      "nome": "A Substância",
+      "imagem": "../oscar2025/a-substancia.jpg"
+    },
+    {
+      "nome": "Ainda Estou Aqui",
+      "imagem": "../oscar2025/ainda-estou-aqui.jpg"
+    },
+    {
+      "nome": "Um Completo Desconhecido",
+      "imagem": "../oscar2025/um-completo-desconhecido.jpg"
+    },
+    {
+    "nome": "Nosferatu",
+    "imagem": "../oscar2025/nosferatu.jpg"
+    },
+    {
+    "nome": "A Verdadeira Dor",
+    "imagem": "../oscar2025/a-verdadeira-dor.jpg"
+    },
+    {
+    "nome": "Flow",
+    "imagem": "../oscar2025/flow.jpg"
+    },
+    {
+    "nome": "Robô Selvagem",
+    "imagem": "../oscar2025/robo-selvagem.jpg"
+    },
+    {
+    "nome": "O Aprendiz",
+    "imagem": "../oscar2025/o-aprendiz.jpg"
+    },
+    {
+    "nome": "Gladiador 2",
+    "imagem": "../oscar2025/gladiador-2.jpg"
+    }
+    ]
+  }
+  

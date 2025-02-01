@@ -1,0 +1,144 @@
+:root {
+  --bg-color: #161616;
+  --light-color: #ffffff;
+  --primary-color: #C10D0D;
+  --font-bungee: "Bungee Shade", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+/* Reset */
+body, h1, a, button, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+body{
+  height: 100vh;
+}
+
+/* Estilos Globais */
+.font-bungee {
+  font-family: var(--font-bungee);
+  font-weight: 600;
+}
+
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+/* Container */
+.container {
+  background: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.titulo {
+  font-size: 7rem;
+  font-weight: bold;
+  font-family: var(--font-roboto);
+  color: var(--light-color);
+}
+
+.container-btn button {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  font-family: var(--font-roboto);
+  cursor: pointer;
+}
+
+.container-btn button:hover {
+  opacity: 0.93;
+}
+
+.btn-start {
+  padding: 5px 20px;
+  margin: 5px;
+  background: var(--primary-color);
+}
+
+.btn-help {
+  padding: 3px 10px;
+  border: 1px solid var(--light-color);
+  background: #0684CB;
+}
+
+/* Container Title */
+.container-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+.container-title .titulo {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+/* Container Film */
+
+.container-copa {
+  background: var(--bg-color);
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container-film {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 5rem auto;
+  gap: 50px;
+}
+
+.container-film img {
+  width: 26rem;
+  height: 37rem;
+  border: 1px solid var(--light-color);
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 10px;
+  transition: width 1s, height 1s;
+}
+
+.container-film .name-film {
+  text-align: center;
+  color: var(--light-color);
+  font-size: 1.7rem;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+.container-film img:hover {
+  width: 30rem;
+  height: 42.5rem;
+}
+
+/* Container VS */
+.container-vs {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.container-vs .titulo {
+  letter-spacing: -5px;
+  font-size: 4.5rem;
+}

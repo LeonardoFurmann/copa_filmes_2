@@ -12,10 +12,10 @@ const Vecedor = () => {
     <div className="container-copa">
       <Titulo texto={"E o Vencedor é..."} />
       <div>
-        <div className="container-film">
-          <div className="movie" data-id="0">
-            <img src={vencedor.imagem} alt="" id="img_movie1" className="filme" />
-            <h2 className="name-film" id="name_movie1">{vencedor.nome}</h2>
+        <div className="container-vencedor">
+          <div className="movie">
+            <h2 className="name-film" id="name_movie">{vencedor.nome}</h2>
+            <img src={vencedor.imagem} alt="Vencedor" id="img_movie" className="imagem-filme" />
           </div>
         </div>
       </div>

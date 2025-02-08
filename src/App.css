@@ -45,6 +45,12 @@ body{
   gap: 1rem;
 }
 
+.movie{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .titulo {
   font-size: 7rem;
   font-weight: bold;
@@ -130,13 +136,21 @@ body{
   height: 42.5rem;
 }
 
+.container-film .name-film {
+  text-align: center;
+  color: var(--light-color);
+  font-size: 1.7rem;
+  font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
 /* container vencedor */
 .container-vencedor{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: .5rem auto;
   animation: brilho 5s;
 }
 
@@ -150,14 +164,6 @@ body{
   }
 }
 
-.container-film .name-film {
-  text-align: center;
-  color: var(--light-color);
-  font-size: 1.7rem;
-  font-family: var(--font-roboto);
-  font-weight: 500;
-}
-
 .container-vencedor .imagem-filme{
   cursor: default;
   width: 30rem;
@@ -166,7 +172,6 @@ body{
   border-radius: 3px;
 }
 
-
 .container-vencedor .name-film{
   text-align: center;
   color: var(--light-color);
@@ -174,6 +179,16 @@ body{
   font-family: var(--font-roboto);
   font-weight: 500;
 }
+
+.container-vencedor .btn-start{
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 18px;
+  color: #161616;
+  font-weight: 700;
+  background: var(--light-color);
+}
+
 
 /* Container VS */
 .container-vs {

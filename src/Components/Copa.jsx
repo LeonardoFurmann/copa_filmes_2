@@ -11,7 +11,7 @@ const Copa = () => {
     const [vencedores, setVencedores] = useState([]);
     const [indiceConfrontoAtual, setIndiceConfrontoAtual] = useState(0);
     const [rodadaAtual, setRodadaAtual] = useState(1);
-    const [textoRodada, setTextoRodada] = useState();
+    const [textoRodada, setTextoRodada] = useState("");
 
     useEffect(() => {
         //console.log(filmes)
@@ -21,7 +21,7 @@ const Copa = () => {
     useEffect(() => {
 
         const tamanhoLista = confrontos.length == 0 ? filmes.length/2 : confrontos.length
-        
+
         if (tamanhoLista == 8) {
             setTextoRodada("Oitavas de final")
         }

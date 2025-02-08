@@ -1,13 +1,16 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react'
+import { CopaContext } from '../CopaContext';
 
 const Home = () => {
-    const navigate = useNavigate();
+    const {start, setStarted} = useContext(CopaContext);
+
+    useEffect(() => {
+        setStarted(false);
+    }, [])
 
     function startTornament(){
-        navigate('/copa')
+        start();
     }
-
 
   return (
     <div className="container">
@@ -16,7 +19,7 @@ const Home = () => {
         </div>
         <div className="container-btn">
             <button id="btn_start" className="btn-start" onClick={startTornament} >Começar</button>
-            <button id="btn_help" className="btn-help">?</button>
+            {/* <button id="btn_help" className="btn-help">?</button> */}
         </div>
     </div>
   )

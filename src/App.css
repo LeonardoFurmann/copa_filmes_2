@@ -52,6 +52,12 @@ body{
   color: var(--light-color);
 }
 
+.rodada{
+  font-size: 1.5rem;
+  font-family: var(--font-roboto);
+  color: var(--light-color);
+}
+
 .container-btn button {
   font-size: 1.5rem;
   border-radius: 10px;
@@ -115,7 +121,7 @@ body{
   border-radius: 3px;
   cursor: pointer;
   margin: 10px;
-  transition: width 1s, height 1s;
+  transition: width 0.6s, height 0.6s;
 }
 
 .container-film .name-film {

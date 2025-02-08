@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Confronto from './Confronto'
 import Filme from './Filme'
 import filmesJson from '../db.json'
 import { useNavigate } from 'react-router-dom';
+import { Titulo } from './Titulo';
 
 const Copa = () => {
     const navigate = useNavigate();
@@ -10,15 +10,38 @@ const Copa = () => {
     const [confrontos, setConfrontos] = useState([]);
     const [vencedores, setVencedores] = useState([]);
     const [indiceConfrontoAtual, setIndiceConfrontoAtual] = useState(0);
-    const [rodadaAtual, setRodadaAtual] = useState(1)
+    const [rodadaAtual, setRodadaAtual] = useState(1);
+    const [textoRodada, setTextoRodada] = useState();
 
     useEffect(() => {
         //console.log(filmes)
         iniciarConfrontos(filmes)    
     }, []);
 
+    useEffect(() => {
+
+        const tamanhoLista = confrontos.length == 0 ? filmes.length/2 : confrontos.length
+        
+        if (tamanhoLista == 8) {
+            setTextoRodada("Oitavas de final")
+        }
+
+        if (tamanhoLista == 4) {
+            setTextoRodada("Quartas de final")
+        }
+
+        if (tamanhoLista == 2) {
+            setTextoRodada("Semifinal")
+        }
+
+        if (tamanhoLista == 1) {
+            setTextoRodada("Final")
+        }
+
+    }, [rodadaAtual])
+
     const iniciarConfrontos = (listaFilmes) => {
-        console.log(listaFilmes)
+        //console.log(listaFilmes)
         const listaConfrontos = [];
         for (let i = 0; i < listaFilmes.length; i += 2) {
             listaConfrontos.push([listaFilmes[i], listaFilmes[i + 1]]);
@@ -30,7 +53,7 @@ const Copa = () => {
 
     const selecionarVencedor = (vencedor) => {
         setVencedores((prev) => [...prev, vencedor]);
-        console.log(vencedores)
+        //console.log(vencedores)
         if (indiceConfrontoAtual + 1 < confrontos.length) {
             setIndiceConfrontoAtual((prev) => prev + 1);
         } else {
@@ -55,10 +78,7 @@ const Copa = () => {
 
     return (
         <div className="container-copa">
-            <div className="container-title">
-                <h1 className="titulo font-3d">COPA <span className="primary-color ">FILMES</span></h1>
-                <h2 className="titulo">{rodadaAtual} rodada</h2>
-            </div>
+            <Titulo texto={textoRodada} />
 
             {confrontos.length > 0 && (
                 <div className="container-movies" key={indiceConfrontoAtual}>

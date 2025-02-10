@@ -201,3 +201,8 @@ body{
   letter-spacing: -5px;
   font-size: 4.5rem;
 }
+
+.version{
+  color: var(--light-color);
+  font-size: var(--font-bungee);
+}

@@ -34,6 +34,14 @@ body{
   color: var(--primary-color);
 }
 
+.pointer{
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+
 /* Container */
 .container {
   background: var(--bg-color);
@@ -118,6 +126,13 @@ body{
   max-width: 1200px;
   margin: 5rem auto;
   gap: 50px;
+}
+
+@media (max-width: 1150px) {
+  .container-film{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 

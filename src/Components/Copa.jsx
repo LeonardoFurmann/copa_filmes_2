@@ -78,7 +78,7 @@ const Copa = () => {
 
     return (
         <div className="container-copa">
-            <Titulo texto={textoRodada} />
+            <Titulo texto={textoRodada}/>
 
             {confrontos.length > 0 && (
                 <div className="container-movies" key={indiceConfrontoAtual}>

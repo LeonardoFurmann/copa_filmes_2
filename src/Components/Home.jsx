@@ -14,14 +14,14 @@ const Home = () => {
 
   return (
     <div className="container">
-        <div>
+        <div className='text-center'>
             <h1 className="titulo font-3d">COPA <span className="primary-color">FILMES</span></h1>
         </div>
         <div className="container-btn">
             <button id="btn_start" className="btn-start" onClick={startTornament} >Começar</button>
             {/* <button id="btn_help" className="btn-help">?</button> */}
         </div>
-        <p className='version'>Versão: 1.0.0</p>
+        <p className='version'>Versão: 1.0.1</p>
     </div>
   )
 }

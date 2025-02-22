@@ -21,7 +21,7 @@ const Home = () => {
             <button id="btn_start" className="btn-start" onClick={startTornament} >Começar</button>
             {/* <button id="btn_help" className="btn-help">?</button> */}
         </div>
-        <p className='version'>Versão: 1.0.1</p>
+        <p className='version'>Versão: 1.0.2</p>
     </div>
   )
 }

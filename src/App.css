@@ -227,22 +227,19 @@ body{
     font-size: 5rem;
   }
 
-  .container-film .imagem-filme{
-    width: 20rem;
-    height: 30rem;
-  }
-
-  .container-vencedor .imagem-filme{
-    width: 20rem;
-    height: 30rem;
+  .container-film .imagem-filme,
+  .container-vencedor .imagem-filme,
+  .container-film .imagem-filme:hover {
+    width: 18rem;
+    height: 27rem;
   }
 
   .name-film{
     padding-bottom: 20px;
   }
 
-  .primary-color{
-    color: red;
+  .container-vs .titulo{
+    font-size: 4rem;
   }
 }
 
